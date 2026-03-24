@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-45deg, #0a192f, #112240, #233554, #4a90e2) !important;
+    background-size: 400% 400% !important;
+    animation: gradientBG 15s ease infinite !important;
+    font-family: 'Inter', sans-serif !important;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    background: rgba(17, 34, 64, 0.7) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    color: #fff !important;
+    transition: transform 0.3s ease;
+}
+
+td {
+    text-align: center;
+}
+
+.header-text {
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: -0.5px;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.sub-text {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.form-label {
+    color: rgba(255, 255, 255, 0.8);
+    text-align: left;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.label-td {
+    text-align: left;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.hover-link1 {
+    font-weight: 600;
+    color: #4a90e2;
+    transition: 0.3s;
+}
+
+.hover-link1:hover {
+    color: #8bb9f5;
+    text-decoration: none;
+}
+
+.login-btn {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+}

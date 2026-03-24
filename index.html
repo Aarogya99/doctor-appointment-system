@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DAMS | Doctor Appointment Management System</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+
+  <!-- Your external styles (if any) -->
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/main.css" />
+
+  <!-- Favicon & Meta -->
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <meta name="description" content="Doctor Appointment Management System (DAMS) lets you book appointments with doctors online easily.">
+  <meta name="keywords" content="Doctor, Appointment, DAMS, Hospital, Online Booking">
+
+  <style>
+    html, body {
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: url('img/.jpg') no-repeat center center/cover;
+      color: white;
+      position: relative;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.7);
+      height: 100vh;
+      width: 100vw;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+
+    .logo-bar {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      z-index: 2;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .logo-bar .logo {
+      font-size: 26px;
+      font-weight: 700;
+      color: #00D1FF;
+    }
+
+    .logo-bar .logo-sub {
+      font-size: 14px;
+      font-weight: 400;
+      color: #ddd;
+      margin-left: 5px;
+    }
+
+    .nav-links a {
+      color: #ffffff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #00D1FF;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      flex-wrap: wrap;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .hero-text {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .hero-img {
+      flex: 1;
+      min-width: 300px;
+      text-align: center;
+    }
+
+    .hero-img img {
+      width: 100%;
+      max-width: 450px;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+
+    h1 {
+      font-size: 50px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+    }
+
+    p.description {
+      font-size: 18px;
+      line-height: 1.7;
+      max-width: 700px;
+      color: #eeeeee;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+    }
+
+    .btn-primary {
+      margin-top: 30px;
+      padding: 14px 35px;
+      font-size: 16px;
+      font-weight: 500;
+      background: linear-gradient(135deg, #00D1FF, #007BFF);
+      color: white;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(0, 209, 255, 0.3);
+      transition: 0.3s ease-in-out;
+    }
+
+    .btn-primary:hover {
+      background: linear-gradient(135deg, #007BFF, #00D1FF);
+      transform: scale(1.05);
+    }
+
+    @media screen and (max-width: 768px) {
+      h1 {
+        font-size: 32px;
+      }
+
+      p.description {
+        font-size: 16px;
+        padding: 0 15px;
+      }
+
+      .logo-bar {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .nav-links {
+        margin-top: 10px;
+      }
+
+      .hero {
+        flex-direction: column;
+        padding: 0 20px;
+        text-align: center;
+      }
+
+      .hero-img img {
+        max-width: 80%;
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+
+  <div class="logo-bar">
+    <div>
+      <span class="logo">DAMS</span>
+      <span class="logo-sub">| The Appointment Software</span>
+    </div>
+    <div class="nav-links">
+      <a href="login.php">LOGIN</a>
+      <a href="signup.php">REGISTER</a>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="hero">
+      <div class="hero-text">
+        <h1>Avoid Hassles & Delays.</h1>
+        <p class="description">
+          Welcome to <strong>DAMS (Doctor Appointment Management System)</strong> – a seamless platform to book appointments with doctors online.
+          Save time, avoid long queues, and connect directly with trusted healthcare professionals from the comfort of your home.
+        </p>
+        <a href="login.php"><button class="btn-primary">Make Appointment</button></a>
+      </div>
+      <div class="hero-img">
+        <img src="img/doctor-nurse.png" alt="Doctor and Nurse">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
