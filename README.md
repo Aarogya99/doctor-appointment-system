@@ -38,8 +38,8 @@ This initiative facilitates online appointment requests for clients or patients 
     
 | Admin Dashboard | Doctor Dashboard | Patient Dashboard |
 | -------| -------| -------|
-| Email: `` | Email: ` |   Email: `patient@edoc.com` | 
-| Password: `123` |  Password: `123` |  Password: `123` |
+| Email: `` | Email: ` |   Email: `` | 
+| Password: ` |  Password: `123` |  Password: `123` |
 -----------------------------------------------
 
 
@@ -68,7 +68,6 @@ Server Software: 	`Apache/2.4.39 (Win64) PHP/7.3.5`
 
 MySQL Version: 		`5.7.26`
 
-Demo video: https://youtu.be/mAWHYAHmit4
 
 
 
